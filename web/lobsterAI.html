@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 让手机端正常显示 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的页面</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 页面整体样式 */
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #333;
+        }
+
+        /* 标题样式 */
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #222;
+        }
+
+        /* 段落文字样式 */
+        p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        /* 图片样式（核心：限制大小 + 完整显示 + 不变形） */
+        img {
+            /* 限制图片最大宽度 */
+            max-width: 100%;
+            /* 限制图片最大高度（可自己改） */
+            max-height: 500px;
+            /* 保持比例，完整显示 */
+            object-fit: contain;
+            /* 居中显示 */
+            display: block;
+            margin: 15px auto;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 这里放你的标题 -->
+    <h1>自己写的一个AI复盘skill——LobsterAI使用体验#openclaw</h1>
+    <p>我最近学习AI量化炒股，试了几个工具，包括TradingAgent-CN 和openclaw这些工具，体验AI最新的发展。以下是我做股票复盘的一个简单应用，后续我会逐步完善自己用python写的skill复盘的功能。欢迎大家一起交流。</p>
+    
+
+    <!-- 这里放你的文字 -->
+    <p>1.下载安装有道龙虾</p>
+   
+
+    <!-- 这里放你的图片（把 src 换成你的图片路径/网址） -->
+    <img src="picture/lobsterAI/1.png">
+ 
+   <p>2.配置大模型API key</p>
+   <img src="picture/lobsterAI/2.png">
+    <p>3.选好skill,这里我自己用python写的一个股票复盘的skill </p>
+   <img src="picture/lobsterAI/3.png">
+   <p>4.AI工作的时候，会自己安装python环境，这是我发现它最有用的地方,它解决了一个手动安装经常因为版本不兼容出错的问题。</p>
+   <img src="picture/lobsterAI/4.png">
+   <p>5.这个是执行出来的复盘结果 </p>
+   <img src="picture/lobsterAI/5.png">
+
+    
+</body>
+</html>
