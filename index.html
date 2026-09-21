@@ -13,7 +13,7 @@
     <header style="background: #2c3e50; color: white; padding: 20px 0; text-align: center;">
         <div style="max-width: 1000px; margin: 0 auto; padding: 0 20px;">
             <h1 style="margin: 0; font-size: 28px;">何凉的博客</h1>
-            <p style="margin: 8px 0 0; font-size: 16px; opacity: 0.9;">AIGC工具·数字孪生·智能硬件·游戏</p>
+            <p style="margin: 8px 0 0; font-size: 16px; opacity: 0.9;">虚拟现实·数字孪生·游戏·智能硬件</p>
         </div>
     </header>
 
@@ -23,6 +23,7 @@
         <section style="flex: 7; min-width: 300px;">
             <div style="background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 30px;">
                 <h2 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-top: 0;">最新文章</h2>
+                <div id="latest-list" style="overflow-y: auto; padding-right: 8px;">
                 <article style="border-bottom: 1px dashed #eee; padding: 20px 0;">
                     <h3 style="margin: 0; font-size: 20px;"><a href="web/new-post-4/new-post-4.html" style="color: #3498db; text-decoration: none;">4.做了一个博客编辑器。(千问办公qianwen3.8)</a></h3>
                     <p style="color: #666; margin: 8px 0;">发布时间：2026-09-09 </p>
@@ -51,6 +52,7 @@
                     <img src="web/new-post-1/new-post-1.jpg" style="margin:15px 0;max-width:100%;" />
                     <a href="web/new-post-1/new-post-1.html" style="color: #3498db; text-decoration: none;">点击看视频 →</a>
                 </article>
+                </div>
             </div>
         </section>
 
@@ -62,14 +64,14 @@
                 <p style="text-align: center; margin: 15px 0;">
                     <span style="display: inline-block; width: 100px; height: 100px; line-height: 100px; background: #3498db; color: white; border-radius: 50%; font-size: 25px;">HeLiang</span>
                 </p>
-                <p style="margin: 0; text-align: center; font-weight: bold;">一个编程玩家</p>
+                <p style="margin: 0; text-align: center; font-weight: bold;">AIGC·编程</p>
                 <p style="margin: 10px 0; text-align: center; color: #666;">欢迎交流，我的邮箱：iot666@foxmail.com</p>
             </div>
 
             <!-- 文章标题 -->
             <div style="background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 30px;">
                 <h3 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-top: 0;">文章标题</h3>
-                <ul style="list-style: none; padding: 0; margin: 15px 0 0;">
+                <ul id="side-list" style="list-style: none; padding: 0; margin: 15px 0 0; overflow-y: auto; padding-right: 8px;">
                     <li style="padding: 8px 0; border-bottom: 1px solid #eee;"><a href="web/new-post-4/new-post-4.html" style="color: #666; text-decoration: none;">4.做了一个博客编辑器。(千问办公qianwen3.8)
 发布时间：2026-09-09</a></li>
                     <li style="padding: 8px 0; border-bottom: 1px solid #eee;"><a href="web/new-post-3/new-post-3.html" style="color: #666; text-decoration: none;">3.龙虾的进化，用腾讯workbuddy写自己的A股复盘程序
@@ -86,8 +88,25 @@
     <!-- 底部版权信息 -->
     <footer style="background: #2c3e50; color: white; text-align: center; padding: 20px 0; margin-top: 50px;">
         <div style="max-width: 1000px; margin: 0 auto; padding: 0 20px;">
-            <p style="margin: 0; opacity: 0.9;">到底啦！</p>
+            <p style="margin: 0; opacity: 0.9;"></p>
         </div>
     </footer>
+<script>
+(function () {
+    function fitScroll(wrap, count) {
+        if (!wrap) return;
+        var kids = wrap.children;
+        if (kids.length > count) {
+            var h = 0;
+            for (var i = 0; i < count; i++) h += kids[i].offsetHeight;
+            wrap.style.maxHeight = h + 'px';
+        }
+    }
+    window.addEventListener('load', function () {
+        fitScroll(document.getElementById('latest-list'), 5);
+        fitScroll(document.getElementById('side-list'), 10);
+    });
+})();
+</script>
 </body>
 </html>
