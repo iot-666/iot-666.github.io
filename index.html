@@ -13,7 +13,7 @@
     <header style="background: #2c3e50; color: white; padding: 20px 0; text-align: center;">
         <div style="max-width: 1000px; margin: 0 auto; padding: 0 20px;">
             <h1 style="margin: 0; font-size: 28px;">何凉的博客</h1>
-            <p style="margin: 8px 0 0; font-size: 16px; opacity: 0.9;">AIGC·工具开发·游戏·鸿蒙边缘AI</p>
+            <p style="margin: 8px 0 0; font-size: 16px; opacity: 0.9;">工具开发·鸿蒙边缘AI·游戏·AIGC</p>
         </div>
     </header>
 
@@ -23,7 +23,7 @@
         <section style="flex: 7; min-width: 300px;">
             <div style="background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 30px;">
                 <h2 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-top: 0;">最新文章</h2>
-                <div id="latest-list" style="overflow-y: auto; padding-right: 8px;">
+                <div id="latest-list">
                 <article style="border-bottom: 1px dashed #eee; padding: 20px 0;">
                     <h3 style="margin: 0; font-size: 20px;"><a href="web/new-post-6/new-post-6.html" style="color: #3498db; text-decoration: none;">6.unity游戏制作</a></h3>
                     <p style="color: #666; margin: 8px 0;">发布时间：2026-10-10 </p>
@@ -59,13 +59,6 @@
                     <img src="web/new-post-2/new-post-2_5.png" style="margin:15px 0;max-width:100%;" />
                     <a href="web/new-post-2/new-post-2.html" style="color: #3498db; text-decoration: none;">点击看文章→</a>
                 </article>
-                <article style="border-bottom: 1px dashed #eee; padding: 20px 0;">
-                    <h3 style="margin: 0; font-size: 20px;"><a href="web/new-post-1/new-post-1.html" style="color: #3498db; text-decoration: none;">1.我做的一个UE射击DEMO</a></h3>
-                    <p style="color: #666; margin: 8px 0;">发布时间：2026-01-13 </p>
-                    <p style="margin: 15px 0; text-indent: 2em;">我的第一个UE5 DEMO</p>
-                    <img src="web/new-post-1/new-post-1.jpg" style="margin:15px 0;max-width:100%;" />
-                    <a href="web/new-post-1/new-post-1.html" style="color: #3498db; text-decoration: none;">点击看视频 →</a>
-                </article>
                 </div>
             </div>
         </section>
@@ -75,11 +68,8 @@
             <!-- 个人介绍卡片 -->
             <div style="background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 30px;">
                 <h3 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-top: 0;">关于我</h3>
-                <p style="text-align: center; margin: 15px 0;">
-                    <span style="display: inline-block; width: 100px; height: 100px; line-height: 100px; background: #3498db; color: white; border-radius: 50%; font-size: 25px;">HeLiang</span>
-                </p>
-                <p style="margin: 0; text-align: center; font-weight: bold;">AIGC·编程</p>
-                <p style="margin: 10px 0; text-align: center; color: #666;">欢迎交流，我的邮箱：iot666@foxmail.com</p>
+                <p style="margin: 0; text-align: left; font-weight: bold;">AIGC·编程</p>
+                <p style="margin: 10px 0; text-align: left; color: #666;">欢迎交流，我的邮箱：iot666@foxmail.com</p>
             </div>
 
             <!-- 文章标题 -->
@@ -96,8 +86,6 @@
 发布时间：2026-07-26</a></li>
                     <li style="padding: 8px 0; border-bottom: 1px solid #eee;"><a href="web/new-post-2/new-post-2.html" style="color: #666; text-decoration: none;">2.一个AI复盘skill——LobsterAI使用体验#openclaw
 发布时间：2026-03-1</a></li>
-                    <li style="padding: 8px 0; border-bottom: 1px solid #eee;"><a href="web/new-post-1/new-post-1.html" style="color: #666; text-decoration: none;">1.我做的一个UE射击DEMO
-发布时间：2026-01-13</a></li>
                 </ul>
             </div>
         </aside>
@@ -121,7 +109,6 @@
         }
     }
     window.addEventListener('load', function () {
-        fitScroll(document.getElementById('latest-list'), 5);
         fitScroll(document.getElementById('side-list'), 10);
     });
 })();
