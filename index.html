@@ -7,13 +7,20 @@
     <!-- 页面元信息，利于搜索引擎收录 -->
     <meta name="description" content="AIGC/数字孪生/游戏引擎/开源鸿蒙">
     <meta name="keywords" content="AIGC/数字孪生/游戏引擎/开源鸿蒙">
+    <style>
+        .side-pager { display: none; margin-top: 12px; padding-top: 10px; border-top: 1px solid #eee; text-align: center; }
+        .side-pager a { display: inline-block; min-width: 26px; margin: 0 3px; padding: 3px 8px; border: 1px solid #ddd; border-radius: 4px; color: #666; font-size: 12px; text-decoration: none; }
+        .side-pager a:hover { border-color: #3498db; color: #3498db; }
+        .side-pager a.active { background: #3498db; border-color: #3498db; color: #fff; cursor: default; }
+        .side-pager a.disabled { color: #bbb; border-color: #eee; cursor: default; }
+    </style>
 </head>
 <body style="margin: 0; padding: 0; font-family: '微软雅黑', Arial, sans-serif; background: #f5f5f5; color: #333; line-height: 1.7;">
     <!-- 顶部导航栏 -->
     <header style="background: #2c3e50; color: white; padding: 20px 0; text-align: center;">
         <div style="max-width: 1000px; margin: 0 auto; padding: 0 20px;">
             <h1 style="margin: 0; font-size: 28px;">何凉的博客</h1>
-            <p style="margin: 8px 0 0; font-size: 16px; opacity: 0.9;">工具开发·鸿蒙边缘AI·游戏·AIGC</p>
+            <p style="margin: 8px 0 0; font-size: 16px; opacity: 0.9;">工具开发·游戏·鸿蒙边缘AI</p>
         </div>
     </header>
 
@@ -75,18 +82,21 @@
             <!-- 文章标题 -->
             <div style="background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 30px;">
                 <h3 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-top: 0;">文章标题</h3>
-                <ul id="side-list" style="list-style: none; padding: 0; margin: 15px 0 0; overflow-y: auto; padding-right: 8px;">
-                    <li style="padding: 8px 0; border-bottom: 1px solid #eee;"><a href="web/new-post-6/new-post-6.html" style="color: #666; text-decoration: none;">6.unity游戏制作
+                <ul id="side-list" style="list-style: none; padding: 0; margin: 15px 0 0;">
+                    <li style="padding: 8px 0; border-bottom: 1px solid #eee;" data-summary="今天跟着学习开发一个unity游戏。" data-img="web/new-post-6/屏幕截图_2026-10-10_161033.png" data-link="点击看视频→"><a href="web/new-post-6/new-post-6.html" style="color: #666; text-decoration: none;">6.unity游戏制作
 发布时间：2026-10-10</a></li>
-                    <li style="padding: 8px 0; border-bottom: 1px solid #eee;"><a href="web/new-post-5/new-post-5.html" style="color: #666; text-decoration: none;">5.deepseek harness桌面版上市了。
+                    <li style="padding: 8px 0; border-bottom: 1px solid #eee;" data-summary="deepseek harness 上使用agnes3.0 大模型比再workbuddy上反应更快。" data-img="web/new-post-5/屏幕截图_2026-09-30_093922.png" data-link="点击看文章→"><a href="web/new-post-5/new-post-5.html" style="color: #666; text-decoration: none;">5.deepseek harness桌面版上市了。
 发布时间：2026-09-30</a></li>
-                    <li style="padding: 8px 0; border-bottom: 1px solid #eee;"><a href="web/new-post-4/new-post-4.html" style="color: #666; text-decoration: none;">4.做了一个博客编辑器。(千问办公qianwen3.8)
+                    <li style="padding: 8px 0; border-bottom: 1px solid #eee;" data-summary="给自己写了个博客工具，终于不用手动一行行输入代码了。" data-img="web/new-post-4/new-post-4.png" data-link="点击看文章→"><a href="web/new-post-4/new-post-4.html" style="color: #666; text-decoration: none;">4.做了一个博客编辑器。(千问办公qianwen3.8)
 发布时间：2026-09-09</a></li>
-                    <li style="padding: 8px 0; border-bottom: 1px solid #eee;"><a href="web/new-post-3/new-post-3.html" style="color: #666; text-decoration: none;">3.龙虾的进化，用腾讯workbuddy写自己的A股复盘程序
+                    <li style="padding: 8px 0; border-bottom: 1px solid #eee;" data-summary="用腾讯workbuddy写自己的复盘程序" data-img="web/new-post-3/new-post-3.jpg" data-link="点击看视频→"><a href="web/new-post-3/new-post-3.html" style="color: #666; text-decoration: none;">3.龙虾的进化，用腾讯workbuddy写自己的A股复盘程序
 发布时间：2026-07-26</a></li>
-                    <li style="padding: 8px 0; border-bottom: 1px solid #eee;"><a href="web/new-post-2/new-post-2.html" style="color: #666; text-decoration: none;">2.一个AI复盘skill——LobsterAI使用体验#openclaw
+                    <li style="padding: 8px 0; border-bottom: 1px solid #eee;" data-summary="有道龙虾的安装使用，自己写skill。" data-img="web/new-post-2/new-post-2_5.png" data-link="点击看文章→"><a href="web/new-post-2/new-post-2.html" style="color: #666; text-decoration: none;">2.一个AI复盘skill——LobsterAI使用体验#openclaw
 发布时间：2026-03-1</a></li>
+                    <li style="padding: 8px 0; border-bottom: 1px solid #eee;" data-summary="我的第一个UE5 DEMO" data-img="web/new-post-1/new-post-1.jpg" data-link="点击看视频 →"><a href="web/new-post-1/new-post-1.html" style="color: #666; text-decoration: none;">1.我做的一个UE射击DEMO
+发布时间：2026-01-13</a></li>
                 </ul>
+                <div id="side-pager" class="side-pager"></div>
             </div>
         </aside>
     </main>
@@ -99,18 +109,43 @@
     </footer>
 <script>
 (function () {
-    function fitScroll(wrap, count) {
-        if (!wrap) return;
-        var kids = wrap.children;
-        if (kids.length > count) {
-            var h = 0;
-            for (var i = 0; i < count; i++) h += kids[i].offsetHeight;
-            wrap.style.maxHeight = h + 'px';
+    var PAGE_SIZE = 10;
+    var ul = document.getElementById('side-list');
+    var bar = document.getElementById('side-pager');
+    if (!ul || !bar) return;
+    var items = Array.prototype.slice.call(ul.children);
+    var pages = Math.ceil(items.length / PAGE_SIZE);
+    var current = 1;
+
+    function show() {
+        for (var i = 0; i < items.length; i++) {
+            items[i].style.display = (i >= (current - 1) * PAGE_SIZE && i < current * PAGE_SIZE) ? '' : 'none';
         }
     }
-    window.addEventListener('load', function () {
-        fitScroll(document.getElementById('side-list'), 10);
-    });
+
+    function build() {
+        bar.innerHTML = '';
+        if (pages <= 1) return;
+        bar.style.display = 'block';
+        function add(label, page, cls) {
+            var a = document.createElement('a');
+            a.href = 'javascript:void(0)';
+            a.textContent = label;
+            if (cls) a.className = cls;
+            if (page) {
+                a.onclick = function () { current = page; show(); build(); };
+            }
+            bar.appendChild(a);
+        }
+        add('‹ 上一页', current > 1 ? current - 1 : 0, current > 1 ? '' : 'disabled');
+        for (var p = 1; p <= pages; p++) {
+            add(String(p), p, p === current ? 'active' : '');
+        }
+        add('下一页 ›', current < pages ? current + 1 : 0, current < pages ? '' : 'disabled');
+    }
+
+    show();
+    build();
 })();
 </script>
 </body>
